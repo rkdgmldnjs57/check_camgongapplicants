@@ -1,0 +1,7 @@
+function consent_order() {
+    var f=document.form;
+    f.action="consent_order_proc.php";
+    f.method="post";
+    if(!confirm("강좌를 신청하시겠습니까?")) return;
+    f.submit();
+}
